@@ -26,10 +26,6 @@ ENV PATH $PATH:/flutter/bin:/flutter/bin/cache/dart-sdk/bin:$ANDROID_HOME/tools/
 
 RUN yes | sdkmanager --licenses && \
 	sdkmanager --update && \
-	sdkmanager tools && \
-	sdkmanager platform-tools &&\
-	sdkmanager emulator && \
-	sdkmanager "build-tools;29.0.2" && \
-	sdkmanager "platforms;android-29"
+	sdkmanager tools platform-tools emulator "build-tools;29.0.2" "platforms;android-29" > /dev/null
 
 RUN flutter doctor
