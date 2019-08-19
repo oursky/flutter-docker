@@ -1,5 +1,7 @@
 FROM openjdk:8
 
+ARG VERSION=v1.7.8+hotfix.4
+
 ENV ANDROID_HOME /android_sdk
 
 RUN apt-get update && \
@@ -10,7 +12,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
 	apt-get install nodejs && \
 	npm install -g appcenter-cli
 
-RUN curl https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.7.8+hotfix.4-stable.tar.xz --output /flutter.tar.xz && \
+RUN curl https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_${VERSION}-stable.tar.xz --output /flutter.tar.xz && \
 	tar xf flutter.tar.xz && \
 	rm flutter.tar.xz
 
