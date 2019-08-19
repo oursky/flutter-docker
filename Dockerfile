@@ -17,7 +17,7 @@ RUN curl https://storage.googleapis.com/flutter_infra/releases/stable/linux/flut
 	rm flutter.tar.xz
 
 RUN curl https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip --output android-sdk-tools.zip && \
-	unzip android-sdk-tools.zip -d $ANDROID_HOME && \
+	unzip -qq android-sdk-tools.zip -d $ANDROID_HOME && \
 	rm android-sdk-tools.zip
 
 RUN git clone https://github.com/StackExchange/blackbox.git /blackbox
