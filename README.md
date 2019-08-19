@@ -1,5 +1,7 @@
 # Flutter Docker Image
 
+[![Build Status](https://travis-ci.com/oursky/flutter-docker.svg?branch=master)](https://travis-ci.com/oursky/flutter-docker)
+
 Flutter docker image for CI/CD.
 Support [App Center](https://appcenter.ms/) and [Blackbox](https://github.com/StackExchange/blackbox).
 
