@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-ARG VERSION=v1.9.1+hotfix.5
+ARG VERSION=v1.12.13+hotfix.5
 
 ENV ANDROID_HOME /android_sdk
 
