@@ -4,5 +4,5 @@ services:
     - docker
 
 script:
-    docker build --build-arg VERSION=v1.7.8+hotfix.4 -t oursky/flutter:v1.7.8-hotfix.4 .
+    docker build .
 
